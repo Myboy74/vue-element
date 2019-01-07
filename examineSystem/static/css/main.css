@@ -1,0 +1,773 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+#app,
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #353639;
+}
+.wrapper{
+    overflow: auto;
+}
+body {
+    /* font-family: "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi,
+        sans-serif; */
+        font-family: PingFang SC;
+}
+a {
+    text-decoration: none;
+    color:#4A90e2;
+}
+textarea{
+    resize: none!important;
+}
+.content {
+    background: none repeat scroll 0 0 #fff;
+    position: absolute;
+    left: 180px;
+    right: 0;
+    top: 88px;
+    bottom: 0;
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.crumbs {
+    margin-bottom: 20px;
+}
+.pagination {
+    margin: 20px 0;
+    text-align: right;
+}
+.plugins-tips {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+.el-button + .el-tooltip {
+    margin-left: 10px;
+}
+
+.el-table tr:hover {
+    background: #f6faff;
+}
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.move-enter-active,
+.move-leave-active {
+    transition: opacity 0.5s;
+}
+.move-enter,
+.move-leave {
+    opacity: 0;
+}
+/*BaseForm*/
+.form-box {
+    width: 600px;
+}
+.form-box .line {
+    text-align: center;
+}
+.el-time-panel__content::after,
+.el-time-panel__content::before {
+    margin-top: -7px;
+}
+/*Readme*/
+.ms-doc .el-checkbox__input.is-disabled + .el-checkbox__label {
+    color: #333;
+    cursor: pointer;
+}
+/*Upload*/
+.pure-button {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+.g-core-image-corp-container .info-aside {
+    height: 45px;
+}
+.el-upload--text {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.el-upload--text .el-icon-upload {
+    font-size: 67px;
+    color: #97a8be;
+    margin: 40px 0 16px;
+    line-height: 50px;
+}
+.el-upload--text {
+    color: #97a8be;
+    font-size: 14px;
+    text-align: center;
+}
+.el-upload--text em {
+    font-style: normal;
+}
+/*VueEditor*/
+.ql-container {
+    min-height: 400px;
+}
+.ql-snow .ql-tooltip {
+    transform: translateX(117.5px) translateY(10px) !important;
+}
+.editor-btn {
+    margin-top: 20px;
+}
+/* 类似头部面包屑 start */
+.headTagLy {
+    /* display: block; */
+    width: 100%;
+    height: 40px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 4px;
+    /* float: left; */
+}
+.headTagLy .tag {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    font-family: PingFang SC;
+	font-size: 18px;
+    color: #353639;
+    font-size: 16px;
+    float: left;
+    max-width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: normal;
+}
+.headTagLy .tag:before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    margin-right: 10px;
+    width: 2px;
+    background: #e91b1b;
+    vertical-align: bottom;
+}
+/* 类似头部面包屑 end */
+/* 公共panel-article Start */
+.ms-articleLy {
+    display: block;
+    width: 100%;
+    margin: 10px auto 0px;
+    border-radius: 4px;
+    padding-bottom: 10px;
+}
+/* 公共panel中的标题样式 */
+.ms-articleLy .titleLy{
+    /* margin: 0; */
+    margin-left: 10px;
+    padding: 15px;
+    color: #353639;
+    font-size: 16px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: normal;
+}
+/* 公共panel-article End */
+/* 清除浮动 */
+.clear,.cle{
+    clear: both;
+}
+/* 信息集边框阴影 */
+.shadowLy {
+    -webkit-box-shadow: #ccc 0px 0px 10px;
+    -moz-box-shadow: #ccc 0px 0px 10px;
+    box-shadow: #ccc 0px 0px 10px;
+}
+.fl{
+    float: left;
+}
+/* 日历 */
+.__vev_calendar-wrapper .cal-wrapper{
+    width: 48% !important;
+    padding: 0!important;
+    height: 303px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+.__vev_calendar-wrapper .events-wrapper .date{
+    max-width: 100% !important;
+    min-width: 100% !important;
+    padding: 10px 0 10px 20px!important;
+    font-size: 16px!important;
+    border-radius: 0!important;
+    text-align: left !important;
+    width: 100% !important;
+    color: black!important;
+    font-weight: unset;
+    position: relative;
+    border-bottom: 1px solid #cccccc;
+    background-color: rgb(240,240,240) !important;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-header{
+    padding: 0!important;
+    background-color:rgb(240,240,240)!important;
+    border-bottom: 1px solid #cccccc;
+}
+.__vev_calendar-wrapper .events-wrapper .cal-events{
+    height: 85%!important;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-header>div{
+    padding: 10px!important;
+}
+.__vev_calendar-wrapper .events-wrapper .date,
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item .date-num,
+.__vev_calendar-wrapper .cal-wrapper .cal-body .weeks .item{
+    font-size: 14px!important;
+}
+.__vev_calendar-wrapper .events-wrapper .date::before{
+    content:"";
+    width: 2px;
+    height: 18px;
+    background-color: #e91b1b;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.__vev_calendar-wrapper .events-wrapper{
+    width: 48% !important;
+    left: 50% !important;
+    /*height: 380px;*/
+    border-radius: 5px!important;
+    border: 1px solid #cccccc;
+    padding: 0!important;
+    background-color: #ffffff!important;
+}
+.__vev_calendar-wrapper .events-wrapper .cal-events {
+    /*height: 95%;*/
+    /*overflow-y: auto;*/
+    padding: 0!important;
+    margin: 0!important;
+}
+.__vev_calendar-wrapper .events-wrapper .event-item{
+    box-shadow: none!important;
+    border-radius: 0!important;
+    border-bottom: 1px dashed #cccccc;
+}
+.__vev_calendar-wrapper{
+    height: 350px;
+}
+.events-wrapper{
+    height: 350px!important;
+}
+/*日历时间得样式 */
+.calendar .events-wrapper .wrapper{
+    min-height: 30px;
+    position: relative; 
+    cursor: pointer;
+}
+/* 日历日期上面得滚动条 */
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates{
+    max-height: 210px!important;
+    overflow: scroll!important;
+}
+.calendar .__vev_calendar-wrapper .events-wrapper .event-item .time{
+    position: absolute;
+    top: 0!important;
+    right: 10px!important;
+}
+.__vev_calendar-wrapper .events-wrapper .event-item{
+    margin-top: 0!important;
+   
+}
+
+.__vev_calendar-wrapper .events-wrapper .event-item .desc{
+    margin-top: 20px!important;
+}
+
+/* 日历添加日程输入框 */
+.calendar .el-textarea__inner{
+    min-height:100px!important;
+}
+.calendar .el-dialog__body{
+    padding-bottom: 0;
+}
+.__vev_calendar-wrapper ::-webkit-scrollbar-track{
+    border: none!important;
+}
+/*日历显示的任务状态 已完成时*/
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item .is-event{
+    border: none!important;
+    background-color:  #C3EDD2!important;
+}
+/*日历显示的任务状态 任务截止 */
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item .is-over{
+    border: none!important;
+    background-color:  #f4b1b1!important;
+}
+/*日历显示的任务状态 存在日程 */
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item .is-existence{
+    border: none!important;
+    background-color:  #d6d7f7!important;
+}
+
+/*改变字体颜色*/
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item .date-num{
+    color: #000000 !important;
+}
+/*操作部分图片样式*/
+.f_box {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    justify-content: center;
+}
+.f_box img{
+    width: 20px;
+    height: 20px;
+    padding: 0 3px;
+    cursor: pointer;
+    border:none;
+}
+
+/*状态样式 start*/
+.orangeState{
+    color:#f9bf2c;
+  }
+  .greenState{
+    color:#3cc56d;
+  }
+  .greyState{
+    color:#898a8f;
+  }
+  .redState{
+    color: #dd0000;
+  }
+  .violetState{
+    color: #797ce6;  
+  }
+  /* 按钮样式 */
+.f_btn{
+    border:none;
+    padding: 10px 26px;
+    border-radius: 5px;
+    background: #cccccc;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #cccccc;
+    font-size: 14px;
+    font-family: PingFang SC;
+}
+.f_btn:hover{
+    background: #dbdbdb;
+}
+.f_green{
+    background: #3CC56D!important;
+}
+.f_blue{
+    background: #54b0fe!important;
+}
+.f_pink{
+    background: #F95A79!important;
+}
+.f_deepBlue{
+    background: #4A90e2!important;
+}
+.f_purple{
+    background: #797CE6!important;
+}
+.f_lightGreen{
+    background: #69CEB5!important;
+}
+.f_bigRed{
+    background: #DD0000!important;
+}
+.f_orange{
+    background: #F9BF2C!important;
+}
+.f_green:hover{
+    background: #43e282 !important;
+}
+.f_blue:hover{
+    background: #39e8ff !important;
+}
+.f_pink:hover{
+    background: #ff7291 !important;
+}
+.f_deepBlue:hover{
+    background: #53a4ff !important;
+}
+.f_purple:hover{
+    background: #888bff !important;
+}
+.f_lightGreen:hover{
+    background: #7ce7cd !important;
+}
+.f_bigRed:hover{
+    background: #f80000 !important;
+}
+.f_orange:hover{
+    background: #ffd533 !important;
+}
+/* 文件上传 */
+.el-upload--text{
+    /* float: left; */
+    width: 80px!important;
+    height: 30px!important;
+    border:none!important;
+    margin-left: 90px!important;
+    overflow: inherit;
+ }
+ .el-upload-list,.el-upload__tip{
+     width: 20%;
+     margin-left: 90px!important;
+ }
+ .el-upload-list__item{
+    border: 1px solid #cccccc;
+    margin-bottom: 5px;
+
+ }
+/* 抄送单位 选择抄送单位 关闭颜色 */
+.copyScore .el-tag .el-icon-close{
+    color:#5c74d8!important;
+}
+.choiceWork .el-tag .el-icon-close{
+    color: #ff7e00!important;
+}
+.copyScore .el-tag .el-icon-close:hover,.choiceWork .el-tag .el-icon-close:hover{
+ color:#ffffff!important;
+}
+.copyScore .el-tag .el-icon-close:hover{
+    background: #5c74d8!important;
+}
+.choiceWork .el-tag .el-icon-close:hover{
+     background: #ff7e00!important;
+
+}
+/* table的公共样式 */
+.el-table th, .el-table tr > th{
+    background:#ececec;
+}
+.el-table {
+    position: relative;
+    /* overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; */
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    color: #606266;
+    border: solid 1px #ececec;
+    border-radius: 5px;
+    /* border: #ccc solid 1px; */
+}
+/* 任务答疑 弹框 */
+.taskAnswer .el-textarea__inner{
+    height: 100px!important;
+}
+.taskAnswer .el-dialog__body {
+    padding: 15px 20px!important;
+}
+.taskAnswer .el-upload{
+    display: block!important;
+}
+/* 上传按钮默认样式 */
+.el-upload--text {
+    /* float: left; */
+    width: 80px!important;
+    height: 30px!important;
+    border: none!important;
+    margin-left: 2px!important;
+    overflow: inherit;
+}
+.el-upload__tip {
+    font-size: 12px;
+    color: #606266;
+    margin-top: 7px;
+    display: inline-block;
+}
+.el-upload-list, .el-upload__tip {
+    width: 80%;
+    margin-left: 2px!important;
+}
+/* 新建任務 */
+.topScore p .el-input{
+    width: 100px!important; 
+  margin:5px 20px!important; 
+}
+.newTask .el-input--suffix .el-input__inner{
+    width: 230px;
+}
+.newTask .el-form-item__label{
+    line-height: 20px!important;
+    margin: 20px 2px 0 10px;
+    color: #353639;
+}
+.newTask .el-textarea__inner{
+    width:350px;
+    height: 100px;
+}
+/***弹窗*****/ 
+.newTask .el-dialog__body{
+    padding: 10px 20px!important;
+}
+.newTask .el-upload__tip{
+    margin-left: 10px!important;
+}
+.newDialog .el-form-item__label{
+    width: 90px!important;
+}
+.newDialog .el-form-item__content{
+    margin-left: 105px!important;
+}
+/* el-upload__tip */
+/* 审核的panel公共样式 */
+.left-panel{
+    width: 20%;
+    border-radius: 5px;
+    border: solid 1px #ececec;
+    height:calc(100% - 60px );
+    margin-top: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.left-panel-title{
+    width: calc(100% - 2px);
+    /* height: 48px; */
+    background:#f1f1f1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: solid 1px #ececec;
+    padding: 1px;
+}
+.left-panel-title > span{
+    display: block;
+    padding: 10px 0 10px 15px;
+    font-family: PingFang SC;
+    font-size: 16px;
+    color: #353639;
+}
+.right-panel{
+    width: 78.5%;
+    border: solid 1px #ececec;
+    height:calc(100% - 60px); 
+    margin: 10px 0px 0px 1%;
+    overflow-y:auto;
+    box-sizing: border-box;
+    float: left;
+}
+.right-panel-title > span{
+    display: block;
+    margin:15px 0px 0px 15px;
+    font-size: 16px;
+    color: #000;
+}
+/* 任务答疑--追问回复 */
+.replyQuestion .el-upload {
+    text-align: left!important;
+    margin-left:15px;
+    float: left;
+}
+.replyQuestion .el-upload-list{
+    margin-top: 20px;
+}
+
+/* 创建会议验证提示样式 */
+  .create div.f_Etext .el-form-item__content .el-form-item__error{
+   margin-top: 10px;
+   
+  }
+  .create .el-form-item__content .el-form-item__error{
+       margin-left: 10px;  
+  }
+/* 会议审核 --详情 */
+.create .texttar .el-input__inner{
+    width: 350px!important;
+  }
+  .create div.texttar .el-form-item__content{
+      margin-left: 95px!important;
+  }
+
+  .create div.texttar .el-input,.create div.texttar .el-textarea{
+      margin: 0;
+  }
+  .create .texttar .el-form-item__label{
+      line-height: 35px!important;
+      margin-left: 10px;
+  }
+  .create .texttar .el-textarea__inner{
+    width: 350px;
+    min-height: 100px!important;
+  }
+  .f_taskHandle .el-textarea__inner{
+    height: 80px;
+  }
+  .noticeAdministion .el-input__inner{
+      width: 280px!important;
+  }
+  .noticeAdministion .el-textarea__inner{
+      width: 350px;
+      height: 100px;
+  }
+  .noticeAdministion .el-form-item{
+      width: 33%;
+      float: left;
+  }
+  .noticeAdministion .release .el-input__inner{
+      width: 100px!important;
+  }
+  .noticeAdministion .f_uplaoad .el-form-item{
+      width: 50%;
+  }
+  .global-panel .f_box .el-input__inner{ 
+      width: 85%;
+      padding-left: 15px!important;
+      padding-right: 0!important;
+      text-align: center;
+  } 
+  /* 保存考核按钮 */
+  .global-panel .el-table .cell{
+    padding: 0!important;
+
+  }
+  /* 新建任务input */
+  .newTask .el-input.is-disabled .el-input__inner{
+    text-align: center;
+  }
+
+  .innorDetail .el-form-item__content{
+      float: left;
+  }
+  .innorDetail .el-input .el-input__inner{
+    width: 200px;
+   
+  }
+  .innorDetail .el-textarea .el-textarea__inner{
+      width: 350px;
+      height: 100px;
+  }
+  /* 任务审核 会议审核 树上面的搜索字体大小*/
+  .taskS .search-input .el-input__inner ,.meetingS .search-input .el-input__inner{
+      font-size: 12px;
+  }
+  /* 督查评价 新建 */
+  .newSupercior .el-textarea__inner{
+      height: 80px;
+  }
+  .newSupercior .el-icon-circle-close:before{
+      font-size: 20px;
+  } 
+.newSupercior .el-icon-search:before,.newUser .el-icon-search:before{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    transform: translate(-55%,-20%);
+}
+.f_uplaoad .el-form-item__label{
+    padding-top: 5px;
+}
+/* 控制创新的上传文件样式 */
+.newTask .f_uplaoad .el-form-item__label{
+   margin: 10px 2px 0 10px;
+}
+/* 后台设置  用户管理 节点树 */
+.userManage .el-tree-node__label{
+    padding-left: 25px!important;
+    padding-right: 20px!important;
+    position: relative;
+}
+.userManage .el-tree-node__label::before{
+    content:"";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    background-image:url(../img/32px.png);
+    background-position: -260px -5px;
+}
+/* 后台设置  用户管理 组织用户维护  新建用户 */
+.newUser .el-input__inner ,.newOrganization .el-input__inner{
+    width: 280px!important;
+}
+.newUser .el-textarea__inner,.newOrganization .el-textarea__inner{
+    width: 400px!important;
+    min-height:100px!important;
+}
+.newUser .el-form-item__label{
+    text-align: left!important;    
+}
+.newUser .l10 .el-input__inner,.newUser .l10 .el-textarea__inner{
+    margin-left: -10px!important;
+}
+/* 后台设置  组织管理  新建机构 */
+.newOrganization .el-form-item__label{
+    width: 150px!important;
+    text-align: left!important; 
+}
+.newOrganization .el-form-item__content{
+    margin-left: 150px!important;
+     
+}
+.l10{
+    padding-left: 10px;
+}
+.newOrganization .l10 .el-input__inner,.newOrganization .l10 .el-textarea__inner{
+    margin-left: -10px!important;
+}
+.newOrganization .el-input{
+    width: 280px!important;
+}
+.newOrganization .el-input--suffix{
+    width: 270px!important;
+}
+/****任务答疑******/
+.taskAnser .el-dialog__body{
+    padding-bottom: 0;
+}
+.taskAnser .el-dialog__footer{
+    padding-top: 0;
+}
+.taskAnser .el-textarea__inner{
+    min-height: 80px!important;
+    width: 85%!important;
+}
+.answerDstails .el-dialog__body{
+    padding-bottom: 0;
+}
+.answerDstails .el-dialog__footer{
+    padding-top: 0;
+}
+.answerDstails .el-textarea__inner{
+    min-height: 80px!important;
+    width: 90%;
+}
+/* 用户管理节点树加滚动条 */
+.f_treeW .el-tree {
+    min-height: 50px;
+    /* width: 100%;
+    text-align: center; */
+    display: inline-block!important;
+}
+/**承办方答疑 文件上传*/
+.fileTask .el-form-item__label{
+    margin-left: 35px;
+  }

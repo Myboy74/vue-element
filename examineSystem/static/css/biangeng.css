@@ -1,0 +1,131 @@
+/* 树的样式改变 */
+.el-tree-node__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: left !important;
+    /*水平居中*/
+    width: 94%;
+    min-height: 25px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.el-tree{
+    /* width:228px; */
+}
+
+.el-tree-node>.el-tree-node__children {
+    width: 96%;
+}
+
+.el-tree-node {
+    white-space: nowrap;
+    white-space: normal;
+}
+
+.el-tree-node__label {
+    margin-left: 2%;
+    display: inline-block;
+    font-size: 14px;
+    /* width: 88%; */
+}
+
+.el-tree-node .is-expanded .is-focusable:nth-last-child(n) {
+
+    border-bottom: solid 1px #ececec;
+}
+
+.el-tree-node .is-expanded {}
+
+.el-tree-node {
+    margin-top: 10px;
+    border-left: solid 1px #ececec;
+}
+
+/* 任务交办  --新建任务--选择下发单位弹框样式修改 */
+.create div.f_lowerWord {
+    /* width: 80%!important;
+    margin: 0 auto; */
+    /* overflow: none!important; */
+}
+
+.create div.f_lowerWord .el-dialog {
+    width: 35%;
+}
+
+.create div.f_lowerWord .el-tree-node__content {
+    min-height: 26px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align:left;
+}
+
+.create div.f_lowerWord .el-tree-node {
+    border-left: none;
+}
+
+.create div.f_lowerWord .el-tree-node__content .el-tree-node .is-expanded .is-focusable:nth-last-child(n) {
+    border-bottom: none;
+}
+
+.create div.f_lowerWord .el-tree-node .is-expanded .is-focusable:nth-last-child(n) {
+    border-bottom: none;
+}
+.el-date-editor .el-range-input{
+    border: none;
+    outline: 0;
+    padding: 0;
+    width: 35%;
+    color: #606266;
+    height: 20px;
+}
+.el-date-editor .el-range__close-icon{
+    font-size: 14px;
+    color: #c0c4cc;
+    width: 25px;
+    display: inline-block;
+    float: right;
+    line-height: 32px;
+    z-index: 99;
+}
+.el-tree-node__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* width: 94%; */
+    min-height: 26px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    justify-content: left !important;
+}
+.item-tree-area .el-tree-node__label {
+    padding-right: 10px;
+    /* width: 100%; */
+   /* word-break: break-word; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    white-space: nowrap; 
+}
+.el-tree__empty-block{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.el-tree__empty-text{
+    min-width: 100px;
+    position: absolute;
+    /* left: 120px;
+    top: 15px; */
+    transform: translate(60%,-50%);
+}
